@@ -11,12 +11,13 @@
     settings = {
       shell = "zsh";
       font = {
-        size = 7.0;
+        size = 11.0;
         normal = {
           family = "Input Mono";
           style = "Regular";
         };
       };
+      mouse.hide_when_typing = true;
     };
   };
 }
