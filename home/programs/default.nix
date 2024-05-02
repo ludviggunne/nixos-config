@@ -4,5 +4,6 @@
     ./common.nix
     ./alacritty.nix
     ./helix.nix
+    ./zsh.nix
   ];
 }
