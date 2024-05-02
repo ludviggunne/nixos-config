@@ -64,7 +64,7 @@ in
 
   # TODO: fonts, OpenSSH
 
-  #programs.dconf.enable = true;
+  programs.dconf.enable = true;
 
   environment.systemPackages = with pkgs; [
     helix
