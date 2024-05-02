@@ -11,5 +11,12 @@
 
     userName = "ludviggl";
     userEmail = "ludvig.gunne.lindstrom.dev@proton.me";
+
+    extraConfig = {
+      core.editor = "hx";
+    };
+
   };
+
+  programs.lazygit.enable = true;
 }
