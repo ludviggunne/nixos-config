@@ -16,7 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Networking
-  networking.hostName = "nixos";
+  networking.hostName = "lifebook";
   networking.networkmanager.enable = true;
   #networking.wireless.enable = true;
 
