@@ -10,7 +10,13 @@
     enable = true;
     settings = {
       shell = "zsh";
-      font.size = 6.0;
+      font = {
+        size = 7.0;
+        normal = {
+          family = "Input Mono";
+          style = "Regular";
+        };
+      };
     };
   };
 }

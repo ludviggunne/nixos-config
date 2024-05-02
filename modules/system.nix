@@ -72,4 +72,10 @@ in
     curl
     zsh
   ];
+
+  fonts.packages = with pkgs; [
+    input-fonts
+  ];
+
+  nixpkgs.config.input-fonts.acceptLicense = true;
 }
