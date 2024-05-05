@@ -7,5 +7,6 @@
     ./zsh.nix
     ./ardour.nix
     ./minecraft.nix
+    ./firefox.nix
   ];
 }
