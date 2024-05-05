@@ -1,5 +1,7 @@
 {
   pkgs,
+  inputs,
+  system,
   ...
 }:
 
@@ -69,6 +71,10 @@
 
         search.force = true;
       };
+
+      extensions = with inputs.firefox-addons.packages.${system}; [
+        vimium
+      ];
     };
   };
 }

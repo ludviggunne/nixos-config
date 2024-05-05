@@ -5,6 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {
@@ -14,7 +19,7 @@
     ...
   }: {
     nixosConfigurations = {
-      lifebook = nixpkgs.lib.nixosSystem {
+      lifebook = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         modules = [
           ./hosts/lifebook
@@ -24,7 +29,7 @@
             home-manager.useGlobalPkgs = true;  
             home-manager.useUserPackages = true;
 
-            home-manager.extraSpecialArgs = inputs;
+            home-manager.extraSpecialArgs = { inherit inputs; inherit system; };
             home-manager.users.ludviggl = import ./home;
             home-manager.backupFileExtension = "backup";
           }
