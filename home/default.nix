@@ -5,16 +5,10 @@
 }:
 
 {
-  imports = [
-    ./i3
-    #./shell
-    ./programs
-  ];
+  imports = [ ./programs ];
 
   home = {
     username = "ludviggl";
-    #homeDirectory = /home/${username};
-
     stateVersion = "23.11";
   };
 

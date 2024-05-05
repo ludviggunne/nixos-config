@@ -12,7 +12,7 @@ in
   users.users.${username} = {
     isNormalUser = true;
     description = "Ludvig Gunne Lindström";
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = [ "networkmanager" "wheel" "audio" ];
   };
 
   programs.zsh.enable = true;
@@ -56,13 +56,9 @@ in
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
   };
 
   services.printing.enable = true;
-
-  # TODO: fonts, OpenSSH
 
   programs.dconf.enable = true;
 

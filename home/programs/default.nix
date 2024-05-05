@@ -5,5 +5,7 @@
     ./alacritty.nix
     ./helix.nix
     ./zsh.nix
+    ./ardour.nix
+    ./minecraft.nix
   ];
 }

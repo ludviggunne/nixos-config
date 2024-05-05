@@ -17,7 +17,7 @@
           style = "Regular";
         };
       };
-      mouse.hide_when_typing = true;
+      #mouse.hide_when_typing = true;
     };
   };
 }
