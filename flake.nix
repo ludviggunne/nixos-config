@@ -29,7 +29,11 @@
             home-manager.useGlobalPkgs = true;  
             home-manager.useUserPackages = true;
 
-            home-manager.extraSpecialArgs = { inherit inputs; inherit system; };
+            home-manager.extraSpecialArgs = {
+              inherit inputs;
+              inherit system;
+              host = "lifebook";
+            };
             home-manager.users.ludviggl = import ./home;
             home-manager.backupFileExtension = "backup";
           }

@@ -1,5 +1,6 @@
 {
   pkgs,
+  host,
   ...
 }:
 
@@ -12,7 +13,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      update = "sudo nixos-rebuild switch --flake ~/nixos-config/#lifebook";
+      update = "sudo nixos-rebuild switch --flake ~/nixos-config/#${host}";
       config = "hx ~/nixos-config";
     };
 
