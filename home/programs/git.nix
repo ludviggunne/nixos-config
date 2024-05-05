@@ -14,6 +14,13 @@
 
     extraConfig = {
       core.editor = "hx";
+      alias = {
+        "co" = "checkout";
+        "br" = "branch";
+        "ci" = "commit";
+        "st" = "status";
+        "ap" = "add --patch";
+      };
     };
 
   };

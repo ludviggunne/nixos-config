@@ -9,6 +9,8 @@
     enable = true;
     profiles.ludviggl = {
 
+      #containersForce = true;
+
       bookmarks = [
         {
           name = "Gmail";

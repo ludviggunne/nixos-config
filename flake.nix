@@ -26,6 +26,7 @@
 
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.ludviggl = import ./home;
+            home-manager.backupFileExtension = "backup";
           }
         ];
       };
