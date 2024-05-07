@@ -11,7 +11,7 @@
     settings = {
       shell = "zsh";
       font = {
-        size = 11.0;
+        size = 10.0;
         normal = {
           family = "Input Mono";
           style = "Regular";

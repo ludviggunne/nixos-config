@@ -9,13 +9,21 @@
   programs.helix = {
     enable = true;
     settings = {
-      theme = "naysayer";
+      theme = "hex_steel";
       editor = {
         line-number = "relative";
         statusline.center = [ "version-control" ];
       };
-      keys.select = {
-        C-h = [ "flip_selections" ];
+
+      keys =
+      let
+        common = {
+          C-h = [ "flip_selections" ];
+        };
+      in
+      {
+        select = common // { };
+        normal = common // { };
       };
     };
   };
