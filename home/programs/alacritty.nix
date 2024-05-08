@@ -17,7 +17,12 @@
           style = "Regular";
         };
       };
-      #mouse.hide_when_typing = true;
+      window = {
+        dimensions = { columns = 130; lines = 35; };
+      };
+      cursor = {
+        vi_mode_style = { shape = "Block"; blinking = "Always"; };
+      };
     };
   };
 }

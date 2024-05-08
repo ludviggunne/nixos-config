@@ -8,7 +8,6 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/system.nix
-    ../../modules/gnome.nix
   ];
 
   # Bootloader

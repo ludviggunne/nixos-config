@@ -9,6 +9,8 @@ let
 in
 
 {
+  imports = [ ./gnome.nix ];
+
   users.users.${username} = {
     isNormalUser = true;
     description = "Ludvig Gunne Lindström";

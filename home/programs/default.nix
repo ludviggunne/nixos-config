@@ -8,5 +8,6 @@
     ./ardour.nix
     ./minecraft.nix
     ./firefox.nix
+    ./direnv.nix
   ];
 }
