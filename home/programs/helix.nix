@@ -19,6 +19,8 @@
       let
         common = {
           C-h = [ "flip_selections" ];
+          C-j = [ "goto_next_paragraph" ];
+          C-k = [ "goto_prev_paragraph" ];
         };
       in
       {

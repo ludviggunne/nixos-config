@@ -4,7 +4,7 @@
 }:
 
 {
-  home.packages = [ pkgs.helix ];
+  home.packages = [ pkgs.alacritty ];
 
   programs.alacritty = {
     enable = true;
