@@ -4,7 +4,7 @@
 }:
 
 {
-  programs.hyyprland = {
+  programs.hyprland = {
     enable = true;
     nvidiaPatches = true;
     xwayland.enable = true;
@@ -31,4 +31,11 @@
 
   xdg.portal.enable = true;
   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
+  services.xserver = {
+    enable = true;
+    layout = "se";
+    xkbVariant = "";
+    displayManager.gdm.enable = true;
+  };
 }

@@ -4,15 +4,20 @@
 }:
 
 {
-  home.packages = [ pkgs.helix ];
+  home.packages = with pkgs; [
+    helix
+    nil
+  ];
 
   programs.helix = {
     enable = true;
+    themes = import ./helix-themes.nix;
     settings = {
-      theme = "hex_steel";
+      theme = "monochrome";
       editor = {
         line-number = "relative";
         statusline.center = [ "version-control" ];
+        cursor-shape.insert = "bar";
       };
 
       keys =
@@ -25,7 +30,10 @@
       in
       {
         select = common // { };
-        normal = common // { };
+        normal = common // {
+          C-p = [ ":clipboard-paste-after" ];
+          C-y = [ ":clipboard-yank" ];
+        };
       };
     };
   };

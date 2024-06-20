@@ -9,5 +9,6 @@
     ./minecraft.nix
     ./firefox.nix
     ./direnv.nix
+    ./vim.nix
   ];
 }

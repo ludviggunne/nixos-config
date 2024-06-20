@@ -9,7 +9,7 @@ let
 in
 
 {
-  imports = [ ./gnome.nix ];
+  imports = [ ./xfce.nix ];
 
   users.users.${username} = {
     isNormalUser = true;
@@ -60,6 +60,9 @@ in
     pulse.enable = true;
   };
 
+  # OpenGL
+  hardware.opengl.enable = true;
+
   services.printing.enable = true;
 
   programs.dconf.enable = true;
@@ -72,8 +75,10 @@ in
   ];
 
   fonts.packages = with pkgs; [
-    input-fonts
+    terminus_font
+    dina-font
+    envypn-font
+    agave
+    comic-mono
   ];
-
-  nixpkgs.config.input-fonts.acceptLicense = true;
 }
