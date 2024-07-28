@@ -15,7 +15,7 @@
       font = {
         size = 6.0;
         normal = {
-          family = "Dejavu Sans Mono";
+          family = "Fira Mono";
         };
       };
       window = {

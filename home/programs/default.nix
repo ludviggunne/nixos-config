@@ -2,7 +2,9 @@
   imports = [
     ./git.nix
     ./common.nix
-    ./alacritty.nix
+    #./alacritty.nix
+    ./kitty.nix
+    ./aerc.nix
     ./helix.nix
     ./zsh.nix
     ./ardour.nix

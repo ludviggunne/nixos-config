@@ -13,7 +13,7 @@
     enable = true;
     themes = import ./helix-themes.nix;
     settings = {
-      theme = "monochrome";
+      theme = "adwaita-dark";
       editor = {
         line-number = "relative";
         statusline.center = [ "version-control" ];

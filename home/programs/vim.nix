@@ -43,6 +43,13 @@
     " Don't redraw while executing macros
     set lazyredraw
 
+    " Fix delay on ESC
+    set ttimeoutlen=5
+
+    " Change cursor shape in insert mode
+    let &t_SI = "\e[6 q"
+    let &t_EI = "\e[2 q"
+
     " Netrw
     let g:netrw_banner=0
     let g:netrw_browse_split=4

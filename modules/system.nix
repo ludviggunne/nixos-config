@@ -82,5 +82,6 @@ in
     envypn-font
     agave
     comic-mono
+    fira
   ];
 }
